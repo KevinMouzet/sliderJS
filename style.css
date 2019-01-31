@@ -1,0 +1,39 @@
+/* slider */
+.slider_full {
+  width: 60%;
+  height: 40vw;
+  background-color: grey;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* slides */
+.slider_full .slide {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 0.8s;
+}
+
+/* controls */
+.slider_full img.arrow {
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(20, 20, 20, 0.5);
+  padding: 1%;
+  cursor: pointer;
+}
+
+.slider_full img.left {
+  left: 0;
+}
+
+.slider_full img.right {
+  right: 0;
+}
