@@ -3,6 +3,7 @@
 This is a slide show with controls and autoplay using only JavaScript & CSS. 
 Tested in IE11, Firefox 64, Edge 44 and Chrome 71.
 
+[View in CodePen](https://codepen.io/kevinmouzet/pen/PVWdxm)
 
 # HTML
 
