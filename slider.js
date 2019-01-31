@@ -3,11 +3,13 @@
 (function() {
 
 
-  // rget the slides
+  // get the slides
   const slides = document.querySelectorAll(".slide");
   // the active slide is the last of the tab
   var slideActive = slides.length - 1;
 
+  // the duration of each slide in ms
+  const slideDuration = 4000;
 
   // turn the opacity of the slide to zero to reveal the slide under. Start from the last. If the active slide is the last, turn all the slide's opacity to 1 and restart
 
@@ -24,7 +26,7 @@
     }
   }
 
-  var lancementSlider = setInterval(sliderTempo, 4000);
+  var lancementSlider = setInterval(sliderTempo, slideDuration);
 
 
   // Slider's controls
@@ -48,7 +50,7 @@
       slideActive = 0;
     }
     // restart the interval
-    lancementSlider = setInterval(sliderTempo, 4000);
+    lancementSlider = setInterval(sliderTempo, slideDuration);
   }
 
   function slideFollow() {
@@ -67,7 +69,7 @@
       slideActive = slides.length - 1;
     }
     // restart interval
-    lancementSlider = setInterval(sliderTempo, 4000);
+    lancementSlider = setInterval(sliderTempo, slideDuration);
   }
 
   sliderPrec.addEventListener("click", slidePrec);
